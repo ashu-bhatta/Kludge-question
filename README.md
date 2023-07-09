@@ -3,7 +3,7 @@
 Every file has a specific sturcture and changing this structure leads to different properties of the file being shown or hidden. For 
 an image file, the binary of this file contains information such as the file type, dimension of the image, color schema etc. For this
 question we go to the part which stores the dimensions of the visible part of the image. To do this we look at the hex of the file. 
-Our required part starts after the code ==ff c0==. A look into the website:
+Our required part starts after the code <mark>ff c0<\mark>. A look into the website:
               ==https://cyberhacktics.com/hiding-information-by-changing-an-images-height/==
 gives further information about this type of encryption. Now we change the part which stores information about the height of the
 image and hide out information. This can later be undone to retrive the image. the question also involve the use of Base64 encryption.
